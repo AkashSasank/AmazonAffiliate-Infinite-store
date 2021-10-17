@@ -8,7 +8,7 @@
     <meta name="author" content=""/>
     <title>The Infinite Store</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="{%static 'home/assets/favicon.png'%}"/>
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -26,9 +26,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href={{home}}>Home</a></li>
                     <li class="nav-item"><a class="nav-link" href={{store_home}}>Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href={{about}}>About</a></li>
-                    <script type="text/javascript">amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="369media0a-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_box";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_theme ="dark"; amzn_assoc_bg_color ="000000"; </script><script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>
+                    <script type="text/javascript">
+                        amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="369media0a-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_box";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_theme ="dark"; amzn_assoc_bg_color ="000000";
+
+
+
+                    </script>
+                    <!--                    <script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>-->
                     <!--                    <li class="nav-item"><a class="nav-link" href="contact.html">Blog</a></li>-->
                 </ul>
             </div>
@@ -42,17 +48,18 @@
                     <div class="my-5 text-center text-xl-start">
                         <h1 class="display-5 fw-bolder text-white mb-2">Amazon Affiliate website with hand picked
                             product recommendations</h1>
-                        <p class="lead fw-normal text-white-50 mb-4">Quickly design and customize responsive
-                            mobile-first sites with Bootstrap, the world’s most popular front-end open source
-                            toolkit!</p>
+                        <p class="lead fw-normal text-white-50 mb-4">Easily pick the products you desire from our
+                            recommended
+                            list of items. Save time on finding products that give best value for your money.</p>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" role="button" href={{store_home}}>Start Shopping</a>
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" role="button" href={{store_home}}>Start
+                                Shopping</a>
                             <a class="btn btn-outline-light btn-lg px-4" href="#features">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
-                                                                                   src="https://dummyimage.com/600x400/343a40/6c757d"
+                                                                                   src="{%static 'home/img/box.png'%}"
                                                                                    alt="..."/></div>
             </div>
         </div>
@@ -61,36 +68,33 @@
     <section class="py-5" id="features">
         <div class="container px-5 my-5">
             <div class="row gx-5">
-                <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
+                <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way of shopping on Amazon </h2>
+                </div>
                 <div class="col-lg-8">
                     <div class="row gx-5 row-cols-1 row-cols-md-2">
                         <div class="col mb-5 h-100">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-collection"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a
-                                bit more text.</p>
+                                    class="bi bi-building"></i></div>
+                            <h2 class="h5">100+ Product categories</h2>
+                            <p class="mb-0">Easily find the best and most essential products from our catalogue</p>
                         </div>
                         <div class="col mb-5 h-100">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-building"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a
-                                bit more text.</p>
+                                    class="bi bi-collection"></i></div>
+                            <h2 class="h5">Top rated products</h2>
+                            <p class="mb-0">Find products with rating above 4<i class="bi bi-star-fill"></i></p>
                         </div>
                         <div class="col mb-5 mb-md-0 h-100">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-toggles2"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a
-                                bit more text.</p>
+                                    class="bi bi-search"></i></div>
+                            <h2 class="h5">Search on Amazon</h2>
+                            <p class="mb-0">Use the search field to find best products directly on amazon</p>
                         </div>
                         <div class="col h-100">
                             <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
-                                    class="bi bi-toggles2"></i></div>
-                            <h2 class="h5">Featured title</h2>
-                            <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a
-                                bit more text.</p>
+                                    class="bi bi-gift"></i></div>
+                            <h2 class="h5">Best deals</h2>
+                            <p class="mb-0">Get the best deals listed for each category</p>
                         </div>
                     </div>
                 </div>
@@ -98,29 +102,23 @@
         </div>
     </section>
     <!-- Testimonial section-->
-    <!--    <div class="py-5 bg-light">-->
-    <!--        <div class="container px-5 my-5">-->
-    <!--            <div class="row gx-5 justify-content-center">-->
-    <!--                <div class="col-lg-10 col-xl-7">-->
-    <!--                    <div class="text-center">-->
-    <!--                        <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of-->
-    <!--                            development time when building new projects! Starting with a Bootstrap template just makes-->
-    <!--                            things easier!"-->
-    <!--                        </div>-->
-    <!--                        <div class="d-flex align-items-center justify-content-center">-->
-    <!--                            <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d"-->
-    <!--                                 alt="..."/>-->
-    <!--                            <div class="fw-bold">-->
-    <!--                                Tom Ato-->
-    <!--                                <span class="fw-bold text-primary mx-1">/</span>-->
-    <!--                                CEO, Pomodoro-->
-    <!--                            </div>-->
-    <!--                        </div>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
+    <div class="py-5 bg-light">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10 col-xl-7">
+                    <div class="text-center">
+                        <div class="fs-4 mb-4 fst-italic">"Save time on endless browsing by using our handpicked
+                            products
+                            catalogue. Buy from the best online marketplace. Better
+                            buy nothing than buy something you don't need!!."
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--    &lt;!&ndash; Blog preview section&ndash;&gt;-->
     <!--    <section class="py-5">-->
     <!--        <div class="container px-5 my-5">-->
