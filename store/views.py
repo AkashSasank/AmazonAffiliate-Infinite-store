@@ -6,7 +6,7 @@ from .constants import home_page_urls
 
 
 def home(request):
-    return render(template_name='home/index.html', request=request, context=home_page_urls)
+    return render(template_name='home.html', request=request, context=home_page_urls)
 
 
 def about(request):
@@ -14,4 +14,4 @@ def about(request):
 
 
 def store(request):
-    return render(template_name='store/index.html', request=request, context=home_page_urls)
+    return render(template_name='store.html', request=request, context=home_page_urls)
