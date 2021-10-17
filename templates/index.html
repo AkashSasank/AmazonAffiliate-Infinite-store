@@ -17,7 +17,8 @@
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div style="position:fixed ; width:100%">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
             <a class="navbar-brand" href={{home}}>The Infinite Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -40,6 +41,8 @@
             </div>
         </div>
     </nav>
+    </div>
+
 
     {%block page%}
     {%endblock%}
